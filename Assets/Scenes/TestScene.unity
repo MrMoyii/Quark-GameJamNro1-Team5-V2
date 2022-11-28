@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -1988,7 +1988,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 100
-  field of view: 67.67275
+  field of view: 76.700966
   orthographic: 0
   orthographic size: 8
   m_Depth: -1
@@ -2013,12 +2013,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.113244176, y: -0.69862825, z: 0.11346185, w: -0.69729537}
-  m_LocalPosition: {x: -23.03, y: 3.3999999, z: -2.510001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7792931, y: 0.101814985, z: 0.08015561, w: -0.6131159}
+  m_LocalPosition: {x: 1.2449571, y: 4.259645, z: 4.1145487}
+  m_LocalScale: {x: 1.4344621, y: 1.4344625, z: 1.4344628}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1037973392}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 18.449001, y: 90.109, z: 0}
 --- !u!82 &963194229
 AudioSource:
@@ -2468,6 +2468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7755939129912551294, guid: b1376372ba6dfa94ca6e1f8ba93d64ad,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.69712555
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755939129912551294, guid: b1376372ba6dfa94ca6e1f8ba93d64ad,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.19
       objectReference: {fileID: 0}
@@ -2593,6 +2598,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1037973392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7755939129912551294, guid: b1376372ba6dfa94ca6e1f8ba93d64ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1018972755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1066288700
 GameObject:
   m_ObjectHideFlags: 0
