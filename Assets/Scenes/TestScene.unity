@@ -6185,13 +6185,19 @@ PrefabInstance:
     - target: {fileID: 5892184488187188503, guid: e96a07b776fac074a9c4531d3bdeb490,
         type: 3}
       propertyPath: obstacles.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5892184488187188503, guid: e96a07b776fac074a9c4531d3bdeb490,
         type: 3}
       propertyPath: obstacles.Array.data[2]
       value: 
       objectReference: {fileID: 2972335316195822436, guid: 8de7e264279de6a4ea8c3c4fbf7c5bf0,
+        type: 3}
+    - target: {fileID: 5892184488187188503, guid: e96a07b776fac074a9c4531d3bdeb490,
+        type: 3}
+      propertyPath: obstacles.Array.data[3]
+      value: 
+      objectReference: {fileID: 2972335316195822436, guid: f72279756a69644458dbe6e5471a7952,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e96a07b776fac074a9c4531d3bdeb490, type: 3}
