@@ -17,19 +17,26 @@ public class SceneLoadManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            LoadNextScene();
+            //LoadNextScene();
+
+            Invoke("Transition", transitionTime);
+            SceneManager.LoadScene(1);
         }
     }
-    public void LoadNextScene()
-    {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        StartCoroutine(SceneLoad(nextSceneIndex));
-    }
+    //public void LoadNextScene()
+    //{
+    //    int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+    //    StartCoroutine(SceneLoad(nextSceneIndex));
+    //}
 
-    public IEnumerator SceneLoad(int sceneIndex)
+    //public IEnumerator SceneLoad(int sceneIndex)
+    //{
+    //    transitionScene.SetTrigger("StartTransition");
+    //    yield return new WaitForSeconds(transitionTime);
+    //    SceneManager.LoadScene(sceneIndex);
+    //}
+    public void Transition()
     {
         transitionScene.SetTrigger("StartTransition");
-        yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(sceneIndex);
     }
 }

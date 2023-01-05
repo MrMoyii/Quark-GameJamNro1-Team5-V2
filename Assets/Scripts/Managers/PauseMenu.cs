@@ -8,6 +8,9 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject buttomPause;
     [SerializeField] private GameObject menuPause;
 
+    [SerializeField] private float transitionTime = 1f;
+    [SerializeField] private Animator transitionScene;
+
     public void Pause()
     {
         Time.timeScale = 0f;
@@ -29,6 +32,24 @@ public class PauseMenu : MonoBehaviour
     }
     public void MainMenu()
     {
+        //SceneManager.LoadScene("MainMenu");
+        //StartCoroutine(SceneLoad("MainMenu"));
+
+        Invoke("Transition", transitionTime);
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Transition()
+    {
+        transitionScene.SetTrigger("StartTransition");
+    }
+
+    //public IEnumerator SceneLoad(string sceneIndex)
+    //{
+    //    transitionScene.SetTrigger("StartTransition");
+    //    Debug.Log("Toyaqui");
+    //    yield return new WaitForSeconds(transitionTime);
+    //    Debug.Log("Toyalla");
+    //    SceneManager.LoadScene(sceneIndex);
+    //}
 }
